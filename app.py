@@ -14,7 +14,7 @@ def index():
 
     params = {
         "from": "onboarding@resend.dev",
-        "to": ["rogers@tryresponse.com"],
+        "to": ["zach@tryresponse.com"],
         "subject": f"[PLEASE CONFIRM] PO #{po} from {organization}",
         "html": f"""
             <p>{organization} sent you a purchase order!</p>
