@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route("/", methods=["POST"])
 def index():
-    resend.api_key = "re_Vi5zBR4T_6gKEo9gButCJdnKgtKk8TPdp"
+    resend.api_key = "re_JKZNXV2a_PP8L16LCXAuAWDPZFtH3uqMD"
     po = request.json.get("po")
     organization = request.json.get("organization")
     review_url = request.json.get("review_url")
