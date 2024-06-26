@@ -12,10 +12,6 @@ def index():
     organization = request.form.get("organization")
     review_url = request.form.get("review_url")
 
-    po = "WSI-45HIL7"
-    organization = "Warehouse Specialists Inc"
-    review_url = "#"
-
     params = {
         "from": "onboarding@resend.dev",
         "to": ["rogers@tryresponse.com"],
