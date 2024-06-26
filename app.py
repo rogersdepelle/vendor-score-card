@@ -8,9 +8,9 @@ app = Flask(__name__)
 @app.route("/", methods=["POST"])
 def index():
     resend.api_key = "re_Vi5zBR4T_6gKEo9gButCJdnKgtKk8TPdp"
-    po = request.form.get("po")
-    organization = request.form.get("organization")
-    review_url = request.form.get("review_url")
+    po = request.json.get("po")
+    organization = request.json.get("organization")
+    review_url = request.json.get("review_url")
 
     params = {
         "from": "onboarding@resend.dev",
